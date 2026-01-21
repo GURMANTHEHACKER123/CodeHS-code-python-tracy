@@ -1,0 +1,24 @@
+speed(0)
+secret_number = 4
+user_number = 0
+
+def checkmark():
+    penup()
+    setposition(-100,0)
+    pendown()
+    pensize(10)
+    color("green")
+    right(45)
+    forward(100)
+    left(90)
+    forward(200)
+
+while user_number != secret_number:
+    user_number = int(input("Guess a number 1-10 (or type 'quit' to exit): "))
+
+    if user_number == "quit":
+        print("Exiting game.")
+        break 
+    elif user_number == 4:
+        checkmark()
+        forward(5)
