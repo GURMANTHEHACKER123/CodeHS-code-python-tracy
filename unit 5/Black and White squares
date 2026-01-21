@@ -1,0 +1,35 @@
+penup()
+setposition(-150,0)
+
+def white_box():
+    for i in range(4):
+        pendown()
+        forward(25)
+        left(90)
+
+def black_box():
+    penup()
+    begin_fill()
+    for i in range(4):
+        pendown()
+        forward(25)
+        left(90)
+    end_fill()
+
+def box():
+    if i % 2 == 0:
+        begin_fill()
+        for i in range(4):
+            forward(35)
+            left(90)
+        end_fill()
+
+for i in range(3):
+    penup()
+    black_box()
+    penup()
+    forward(35)
+    penup()
+    white_box()
+    penup()
+    forward(35)
