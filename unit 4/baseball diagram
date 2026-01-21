@@ -1,0 +1,40 @@
+speed(10)
+def five_things():
+    pendown()
+    color("gray")
+    begin_fill()
+    circle(25,360,5)
+    end_fill()
+    penup()
+    
+
+penup() 
+setposition(0,150)
+color("black")
+five_things()
+setposition(0,170)
+color("black")
+write("2nd" , align="center")
+
+setposition(150,0)
+five_things()
+setposition(150,20)
+color("black")
+write("1st" , align="center")
+
+setposition(-150,0)
+five_things()
+setposition(-150,20)
+color("black")
+write("3rd" , align="center")
+
+setposition(0,-150)
+five_things()
+setposition(0,-130)
+color("black")
+write("Home" , align="center")
+penup()
+
+setposition(0,0)
+write("Pitcher" , align="center")
+setposition(0,-10)
