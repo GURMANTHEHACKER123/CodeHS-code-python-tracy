@@ -1,0 +1,34 @@
+rating = int(input("what do you rate?"))
+
+def make_circle():
+    if rating <= 4:
+        pensize(10)
+        color("red")
+        left(45)
+        for i in range(4):
+            left(90)
+            forward(50)
+            left(180)
+            forward(50)
+   
+   
+    elif rating <= 7:
+        penup()
+        setposition(-100,0)
+        pendown()
+        pensize(10)
+        color("yellow")
+        forward(250)
+   
+    else:
+        penup()
+        setposition(-100,0)
+        pendown()
+        pensize(10)
+        color("green")
+        right(45)
+        forward(100)
+        left(90)
+        forward(200)
+
+make_circle()
