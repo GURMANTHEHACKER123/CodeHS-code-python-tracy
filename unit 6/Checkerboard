@@ -1,0 +1,45 @@
+speed(0)
+penup()
+setposition(-200,-200)
+
+color_value = "red"
+color_value2 = "black"
+
+def sqaure_red():
+    for i in range(4):
+         
+         begin_fill()
+         color(color_value)
+         forward(40)
+         left(90)
+    end_fill()
+
+
+
+def sqaure_black():
+    forward(40)
+    for i in range(4):
+         color(color_value2)
+         begin_fill()
+         forward(40)
+         left(90)
+    end_fill()       
+pendown()
+def line():
+    for i in range(5):
+        sqaure_red()
+        sqaure_black()
+        forward(40)
+        
+def line_2():
+    for i in range(2):
+        line()
+        left(90)
+        forward(80)
+        left(90)
+    left(90)
+    forward(80)
+    right(90)
+
+for i in range(5):
+    line_2()
