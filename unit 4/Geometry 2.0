@@ -1,0 +1,12 @@
+penup()
+speed(10)
+setposition(0, -150)
+pendown()
+
+side = 0 
+size = 20
+
+for i in range(7):
+    circle(size,360,side)
+    side += 1
+    size +=20
