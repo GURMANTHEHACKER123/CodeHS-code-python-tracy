@@ -1,0 +1,18 @@
+speed(10)
+penup()
+setposition(-150,0)
+lenght = 10
+distance = 20
+
+def sqaure():
+    for i in range(4):
+        pendown()
+        forward(lenght)
+        left(90)
+        
+for i in range(5):
+    sqaure()
+    penup()
+    forward(distance)
+    lenght = lenght + 10
+    distance = distance + 20
