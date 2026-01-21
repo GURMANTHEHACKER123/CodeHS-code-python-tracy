@@ -1,0 +1,20 @@
+penup()
+radius = int(input("how wide would u like the snowman: ")) 
+setposition(0,-200)
+
+
+def snowman():
+    pendown()
+    color("gray")
+    begin_fill()
+    circle(radius)
+    left(90)
+    penup()
+    end_fill()
+    forward(radius*2)
+    right(90)
+    pendown()
+        
+for i in range(3):    
+    snowman()
+    radius = radius / 2
