@@ -1,0 +1,46 @@
+happy= input("Are you happy?")
+setposition(0,-75)
+def draw_circle():
+    color("yellow")
+    begin_fill()
+    circle(100)
+    end_fill()
+    penup()
+    setposition(25,50)
+    pendown()  
+
+draw_circle()
+penup()
+setposition(30,50)
+pendown()
+color("black")
+pensize(10)
+circle(5)
+
+penup()
+setposition(-30,50)
+pendown()
+color("black")
+pensize(10)
+circle(5)
+
+
+
+if happy == "yes":
+    right(90)
+    penup()
+    setposition(-70,20)
+    pendown()
+    color("black")
+    pensize(5)
+    circle(70,180,20)
+   
+   
+if happy == "no":
+    left(90)
+    penup()
+    setposition(70,-20)
+    pendown()
+    color("black")
+    pensize(5)
+    circle(70,180,20)
