@@ -1,0 +1,16 @@
+penup()
+
+
+setposition(-200,-200)
+square_length = int(input("what number would u like: "))
+
+def sqaure_1():
+    for i in range(4):
+        pendown()
+        forward(square_length)
+        left(90)
+        
+for i in range(4):
+    sqaure_1()
+    forward(400)
+    left(90)
