@@ -1,0 +1,21 @@
+
+speed(0)
+length = 50
+
+
+penup()
+setposition(-25,-25)
+pendown()
+
+
+while length <= 400:
+    pendown()
+    for i in range(4):
+        forward(length)
+        left(90)
+    length = length + 50
+    penup()
+    backward(25)
+    left(90)
+    forward(-25)
+    right(90)
