@@ -1,0 +1,49 @@
+def draw_checkmark():
+    color("green")
+    pensize(10)
+    penup()
+    backward(50)
+    right(45)
+    pendown()
+    forward(50)
+    left(90)
+    forward(100)
+    
+def draw_up():
+    left(90)
+    forward(100)
+    left(45)
+    backward(50)
+    forward(50)
+    right(90)
+    backward(50)
+    forward(50)
+    left(45)
+    backward(100)
+    
+def draw_down():
+    right(90)
+    forward(100)
+    left(45)
+    backward(50)
+    forward(50)
+    right(90)
+    backward(50)
+    forward(50)
+    left(45)
+    backward(100)
+
+secret_number = 5
+user_number = 0
+
+while user_number & secret_number != 5:
+    reset()
+    speed(0)
+    user_number = int(input("Guess a number 1-10 only: "))
+    if user_number > 5:
+        draw_down()
+    elif user_number < 5:
+        draw_up()
+    else:
+        break
+draw_checkmark()
