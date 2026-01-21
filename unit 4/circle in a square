@@ -1,0 +1,23 @@
+penup()
+setposition(-100,0)
+size_circle = 0
+radius = int(input("pick a number: "))
+color_choice1 = input("pick a color for sqaure: ")
+color_choice2 = input("pick a color for circle: ")
+size_circle = radius
+
+def sqaure1():
+    for i in range(4):
+        pendown()
+        color(color_choice1)
+        forward(radius*2)
+        left(90)
+        
+begin_fill()
+sqaure1()
+forward(radius)
+end_fill()
+color(color_choice2)
+begin_fill()
+circle(size_circle)
+end_fill()
